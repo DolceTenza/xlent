@@ -1,0 +1,132 @@
+.form-container{
+    width: 100%;
+    height: 100vh;
+    background: #bcbaf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container .form-content{
+    width: 65%;
+    background: #fff;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+.form-content .left{
+    position: absolute;
+    background: url('/public/images/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+.left .backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(66, 66, 221, 0.747);
+    
+}
+
+.left .content{
+    z-index: 3;
+    padding: 40px 30px;
+    word-wrap: break-word;
+}
+.content h1{
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 3.3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.content P{
+    color: #fff;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.content .btn-box{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn-box p{
+    color: beige;
+    font-size: 14px;
+}
+.btn-box a{
+    background: #fff;
+    color: steelblue;
+    width: fit-content;
+    padding: 10px 19px;
+    margin-top: 20px;
+    transition: all .3s ease;
+}
+.btn-box a:hover{
+    box-shadow: 0 0 5px #fff;
+}
+.form-content .right{
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.right form{
+    padding: 10px 30px;
+}
+form h1{
+    color: var(--color-gray-900);
+    font-family: sans-serif;
+}
+form .input-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.input-box input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-gray-900);
+    width: 90%;
+    padding: 10px 13px;
+    outline: none;
+}
+.input-box input:focus{
+    border-bottom: none;
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+.btn-login{
+    margin: 20px 0;
+}
+.btn-login .btn-sub{
+    padding: 10px 19px;
+    background: steelblue;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all .3s ;
+}
+.btn-login .btn-sub:hover{
+    box-shadow: 0 0 5px steelblue;
+}
